@@ -53,5 +53,3 @@ Copy code
 ## Notes
 
 - The `sleep()` function is used to simulate the delay, which can be adjusted as needed.
-- This is a basic example and may not cover all possible scenarios or best practices.
-- Please refer to the official Flask documentation for more information and advanced usage.
