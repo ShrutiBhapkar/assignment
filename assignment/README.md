@@ -1,45 +1,57 @@
-Creation of a Flask Application. 
-##To create a Flask application
 
-###Set up a virtual environment
-   -Create a new directory for your project.
-   -Open a terminal or command prompt and navigate to the project directory.
-   -Run the following command to create a virtual environment:
-       python -m venv venv
+# Flask Timeout Example
 
-###Activating Virtual Environment
+This is a basic Flask application that demonstrates a timeout scenario. It includes a `/timeout` route that intentionally delays the response by 35 seconds.
 
-     venv\Scripts\activate
+## Prerequisites
 
-###Installing Flask
-   -While inside the activated virtual environment, run the following command:
+- Python (version X.X.X)
+- Flask (version X.X.X)
 
-       pip install flask
+## Installation
 
-###Create a Flask app file:
-   -Create a new Python file in your project directory.
-   -Open the file in a text editor.
-   -Import Flask and create an instance of the Flask class:
+1. Clone the repository:
 
-          from flask import Flask
-          app = Flask(__name__)
+$ git clone https://github.com/your-repo/your-project.git
+$ cd your-project
 
-###Define routes and views:
+markdown
+Copy code
 
-   -Decorate functions with @app.route() to define routes for different URLs:
+2. Install the required dependencies:
 
-         @app.route('/')
-         def home():
-         return 'Hello, World!'
+$ pip install -r requirements.txt
 
-###Running the application
-    -In your terminal or command prompt, make sure you are in the project directory with the virtual environment activated.
-    -Set the FLASK_APP environment variable to your app file's name:
+markdown
+Copy code
 
-         set FLASK_APP=app.py
+## Usage
 
-    -Run the following command to start the Flask development server:
+1. Run the Flask application:
 
-         flask run
+$ python your_app.py
 
-    -The application will start running, and you can access it in your web browser with the help of the URL displayed in the terminal.
+markdown
+Copy code
+
+2. Open your web browser and navigate to `http://localhost:5000` to access the homepage.
+
+## Routes
+
+### `/`
+
+- Description: Displays a welcome message.
+- Method: GET
+- Response: "Hello welcome to myassignment"
+
+### `/timeout`
+
+- Description: Tests the timeout functionality by delaying the response for 35 seconds.
+- Method: GET
+- Response: No content
+
+## Notes
+
+- The `sleep()` function is used to simulate the delay, which can be adjusted as needed.
+- This is a basic example and may not cover all possible scenarios or best practices.
+- Please refer to the official Flask documentation for more information and advanced usage.
