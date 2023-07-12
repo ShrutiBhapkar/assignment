@@ -54,5 +54,3 @@ Copy code
 ## Mocking
 
 The `mock_sleep` fixture is used to mock the `sleep()` function in order to simulate the delay in the `/timeout` route.
-
-## Notes
