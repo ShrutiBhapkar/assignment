@@ -32,7 +32,7 @@ Creation of a Flask Application.
 
          @app.route('/')
          def home():
-         return 'Hello, World!'
+         return 'Hello welcome to myassignment'
 
 ###Running the application
     -In your terminal or command prompt, make sure you are in the project directory with the virtual environment activated.
